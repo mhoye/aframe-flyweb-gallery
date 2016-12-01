@@ -9,15 +9,22 @@ Demo for building discoverable VR art installations with A-Frame, React and Flyw
 
 ### Installation
 
-To get started:
+To get started, you'll need node and npm installed locally, then clone this repository.
 
 ```bash
-To set up: npm install
-To run the gallery: npm run serve
-To turn on discoverability: npm run serve && npm run flyweb
-```
+To get set up: npm install
+To serve up the site locally: npm run serve
+To serve up the site with discoverability: npm run gallery
 
-can observe it locally via `http://localhost:9090`. 
+You can observe it machine-locally via `http://localhost:9090` for testing.
+
+For discoverability, you'll need to be running a browser that supports WebVR and FlyWeb,
+preferably on a device with motion sensors.
+
+At the moment means [Firefox Nightly on Android.](https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly)
+
+
+
 
 
 
