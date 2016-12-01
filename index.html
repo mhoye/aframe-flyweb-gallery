@@ -3,9 +3,35 @@
   <head>
     <title>William Gibson Overdrive</title>
     <meta name="description" content="Boilerplate for building local virtual reality experiences with A-Frame, React and FlyWeb"></meta>
+    <style>
+    html, body {
+      background-color: #000;
+      color: #fff;
+      margin: 0px;
+      overflow: hidden;
+    }
+    #enterVr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10px;
+      background: black;
+      border: 0;
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    </style>
   </head>
   <body>
-    <div class="scene-container" style="height: 100%; width: 100%"></div>
-    <script src="build/bundle.js"></script>
+    <button id="enterVr">ENTER VR</button>
+    <script src="js/three.min.js"></script>
+    <script src="js/webvr-polyfill.js"></script>
+    <script src="js/VRControls.js"></script>
+    <script src="js/VREffect.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/tween.min.js"></script>
+    <script src="js/C4DCurveLoader.js"></script>
+    <script src="js/sechelt.js"></script>
   </body>
 </html>
