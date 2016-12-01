@@ -3,7 +3,7 @@
   "version": "3.0.1",
   "description": "Boilerplate for building virtual reality experiences with A-Frame and React.",
   "dependencies": {
-    "aframe": "^0.3.2",
+    "aframe": "0.3.0",
     "aframe-animation-component": "^3.0.4",
     "aframe-bmfont-text-component": "^0.1.4",
     "aframe-react": "^3.4.0",
@@ -18,7 +18,7 @@
     "build": "webpack",
     "flyweb": "node index.js",
     "serve": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot --host 0.0.0.0 --port 9090",
-    "gallery": "npm-run-all flyweb serve"
+    "gallery": "npm-run-all --parallel flyweb serve"
   },
   "repository": {
     "type": "git",
